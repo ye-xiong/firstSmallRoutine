@@ -4,11 +4,63 @@ const app = getApp()
 
 Page({
   data: {
-    motto: 'Hello World',
-    userInfo: {},
-    hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    iconList: [{
+      name: 'iconshangdian',
+      text: '附近鲜果'
+    }, {
+      name: 'iconqianggou',
+      text: '抢购'
+    },{
+      name: 'icontianmaoyoujirenzheng',
+      text: '有机鲜果'
+    }, {
+      name: 'iconyoupinlianmeng',
+      text: '优选鲜果'
+    }],
+    recommendList: [{
+      img: '../../images/indexImg/part1(1).png',
+      sale: '￥12',
+      del: '￥30'
+    },{
+      img: '../../images/indexImg/part1(2).png',
+      sale: '￥12',
+      del: '￥30'
+    },{
+      img: '../../images/indexImg/part1(3).png',
+      sale: '￥12',
+      del: '￥30'
+    }],
+    salePart1: [{
+      img: '../../images/indexImg/sale-part1(2).png',
+      text: '皇帝蕉',
+      sale: '39.80'
+    },{
+      img: '../../images/indexImg/sale-part1(3).png',
+      text: '牛奶草莓',
+      sale: '39.80'
+    },{
+      img: '../../images/indexImg/sale-part1(4).png',
+      text: '奉化水蜜桃',
+      sale: '39.80'
+    },{
+      img: '../../images/indexImg/sale-part1(1).png',
+      text: '猕猴桃',
+      sale: '39.80'
+    },{
+      img: '../../images/indexImg/sale-part1(1).jpg',
+      text: '水晶红富士',
+      sale: '39.80'
+    },{
+      img: '../../images/indexImg/sale-part1(6).png',
+      text: '进口西柚',
+      sale: '39.80'
+    }]
   },
+
+  swiperChange (param) {
+    console.log('param', param.detail.current)
+  },
+
   //事件处理函数
   bindViewTap: function() {
     wx.navigateTo({

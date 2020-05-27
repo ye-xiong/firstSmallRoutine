@@ -1,0 +1,72 @@
+{
+  "id": "1839237",
+  "name": "phone",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "57355",
+      "name": "天猫-有机认证",
+      "font_class": "tianmaoyoujirenzheng",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "90510",
+      "name": "优品联盟",
+      "font_class": "youpinlianmeng",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "356475",
+      "name": "所有",
+      "font_class": "suoyou",
+      "unicode": "e62c",
+      "unicode_decimal": 58924
+    },
+    {
+      "icon_id": "357417",
+      "name": "配送",
+      "font_class": "distribution",
+      "unicode": "e659",
+      "unicode_decimal": 58969
+    },
+    {
+      "icon_id": "925464",
+      "name": "皇冠",
+      "font_class": "huangguan",
+      "unicode": "e63c",
+      "unicode_decimal": 58940
+    },
+    {
+      "icon_id": "1086266",
+      "name": "业务图标—品牌限时抢购",
+      "font_class": "yewutubiaopinpaixianshiqianggou",
+      "unicode": "e632",
+      "unicode_decimal": 58930
+    },
+    {
+      "icon_id": "1163358",
+      "name": "苹果",
+      "font_class": "pingguo",
+      "unicode": "e633",
+      "unicode_decimal": 58931
+    },
+    {
+      "icon_id": "3552292",
+      "name": "抢购",
+      "font_class": "qianggou",
+      "unicode": "e619",
+      "unicode_decimal": 58905
+    },
+    {
+      "icon_id": "12387144",
+      "name": "商店",
+      "font_class": "shangdian",
+      "unicode": "e90e",
+      "unicode_decimal": 59662
+    }
+  ]
+}

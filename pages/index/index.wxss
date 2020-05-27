@@ -1,21 +1,194 @@
 /**index.wxss**/
-.userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+@import '../../iconfont/iconfont.wxss';
+.index-header {
+  display: block;
+  width: 100%;
+  position: relative;
+  /* height: 570px; */
 }
-
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
+.top {
+  position: absolute;
+  z-index: 99;
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 20px);
+  color: #fff;
+  padding: 10px;
+}
+.time {
+  position: absolute;
+  z-index: 99;
+  display: flex;
+  width: 100%;
+  top: 45px;
+  justify-content: center;
+}
+.time>view {
+  width: 90%;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  background-color: white;
+  color: rgba(0,0,0,0.7);
+  border-radius: 3px;
+  font-size: 13px;
+}
+.top button {
+  width: auto;
+}
+.top image {
+  width: 20px;
+  height: 20px;
+}
+.index-header .banner, .index-header .banner image {
+  width: 100%;
+}
+.index-header .banner image {
+  height: 280px;
+}
+.index-header swiper  {
+  height: 280px;
+}
+.iconList {
+  display: flex;
+  flex-wrap: wrap;
+}
+.iconList>view {
+  width: 25%;
+  text-align: center;
+  padding: 10px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  /* padding: 10px 0px; */
+}
+.iconList>view>view {
+  width: 100%;
+  font-size: 13px;
+  margin-top: 7px;
+  color: green;
+}
+.iconList>view .iconfont {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: green;
+}
+.iconList>view .border {
+  border: green 1px solid;
+  padding: 10px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
 }
-
-.userinfo-nickname {
-  color: #aaa;
+.pic {
+  width: 95%;
+  margin: 0 auto;
+  height: 150px;
+  border-radius: 20px;
+  -moz-box-shadow:2px 2px 10px 2px rgba(136,136,136,0.2); /* 老的 Firefox */
+	box-shadow: 2px 2px 10px 2px rgba(136,136,136,0.2);
 }
+.pic image {
+  width: 100%;
+  height: 150px;
+  border-radius: 20px;
+}
+.recommend {
+  display: flex;
+  padding: 15px;
+  justify-content: space-between;
+  font-size: 13px;
+}
+.recommend-list {
+  width: 100%;
+  display: flex;
+}
+.recommend-list>view {
+  width: 33.3%;
+  height: 90px;
+  padding: 0px 5px;
+  text-align: center;
+}
+.recommend-list>view image {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  -moz-box-shadow:2px 2px 10px 2px rgba(136,136,136,0.2); /* 老的 Firefox */
+	box-shadow: 2px 2px 10px 2px rgba(136,136,136,0.2);
+}
+.recommend-list>view .sale {
+  font-size: 16px;
+  color: red;
+}
+.recommend-list>view .del {
+  font-size: 12px;
+  color: gray;
+  text-decoration: line-through;
+}
+.today{
+  width: 100%;
+  display: flex;
+  margin-top: 60px;
+  margin-bottom: 15px;
+  justify-content: center;
+  height: 10px;
+  position: relative;
+}
+.today>image{
+  width: 70%;
+  height: 100%;
+}
+.today>text{
+  position: absolute;
+  margin-top: -7px;
+  font-size: 13px;
+}
+.sale-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.sale-list>view {
+  width: 33.3%;
+  /* display: flex; */
+  text-align: center;
+  box-sizing: border-box;
+  border-right: 1px solid rgba(204,204,204,0.2);
+  border-bottom: 1px solid rgba(204,204,204,0.2);
 
-.usermotto {
-  margin-top: 200px;
+   
+}
+.sale-list>div:nth-child(3n+3) {
+      margin-right: 0;
+      border-right: 0!important;
+  }
+.sale-list>div:nth-last-child(3){
+border-bottom: 0;
+
+}
+.sale-list>div:nth-last-child(2){
+border-bottom: 0;
+
+}
+.sale-list>div:nth-last-child(1){
+border-bottom: 0;
+}
+.sale-list>view>image {
+  width: 70%;
+  height: 90px;
+}
+.sale-list>view>view {
+  font-size: 12px;
+}
+.sale-list>view>.sale-item {
+  width: calc(100% - 20px);
+  display: flex;
+  padding: 0px 10px;
+  padding-top: 5px;
+  font-size: 14px;
+  color: green;
+  justify-content: space-between;
+}
+.sale-list>view .iconfont {
+  color: #e5a01a;
 }

@@ -1,13 +1,81 @@
 <!--index.wxml-->
 <view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+  <view class="index-header">
+    <view class="top">
+      <i bindtap="btnclick">福州 ></i>
+      <image src="../../images/indexIcon/message.png"></image>
+    </view>
+    <view class="time">
+      <view>一小时新鲜直达</view>
+    </view>
+    <swiper class="banner" bindchange="swiperChange">
+      <swiper-item>
+        <image src="../../images/banner/banner1.jpg"></image>
+      </swiper-item>
+      <swiper-item>
+        <image src="../../images/banner/banner2.png"></image>
+      </swiper-item>
+      <swiper-item>
+        <image src="../../images/banner/banner3.jpg"></image>
+      </swiper-item>
+    </swiper>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+  <view class="iconList">
+    <view wx:for="{{ iconList }}" wx:key="key" >
+      <view class="border">
+      <icon class="iconfont {{item.name}}"></icon>
+      </view>
+      <view>{{ item.text }}</view>
+    </view>
+  </view>
+  <view class="pic">
+    <image src="../../images/indexImg/pic.png"></image>
+  </view>
+  <view class="recommend">
+    <text>掌柜推荐</text>
+    <text>更多></text>
+  </view>
+  <view class="recommend-list">
+    <view wx:for="{{recommendList}}"
+      wx:for-item="recommendItem"
+      wx:for-index='index'
+      wx:key="{{ index }}">
+      <image src="{{ recommendItem.img }}"></image>
+      <view class="sale">{{ recommendItem.sale }}</view>
+      <view class="del">{{ recommendItem.del }}</view>
+    </view>
+  </view>
+  <view class="today">
+    <image src="../../images/indexImg/index_line.png"></image>
+    <text>今日推荐</text>
+  </view>
+  <view class="sale-list">
+    <view wx:for="{{ salePart1 }}"  
+      wx:for-item="saleItem"
+      wx:for-index='index'
+      wx:key="{{ index }}">
+      <image src="{{ saleItem.img }}"></image>
+      <view>{{ saleItem.text }}</view>
+      <view class="sale-item">
+        <text>￥{{ saleItem.sale }}</text>
+        <icon class="iconfont iconqianggou"></icon>
+      </view>
+    </view>
+  </view>
+  <view class="pic" style="margin-top:10px">
+    <image src="../../images/indexImg/q19.jpg"></image>
+  </view>
+  <view class="sale-list">
+    <view wx:for="{{ salePart1 }}"  
+      wx:for-item="saleItem"
+      wx:for-index='index'
+      wx:key="{{ index }}">
+      <image src="{{ saleItem.img }}"></image>
+      <view>{{ saleItem.text }}</view>
+      <view class="sale-item">
+        <text>￥{{ saleItem.sale }}</text>
+        <icon class="iconfont iconqianggou"></icon>
+      </view>
+    </view>
   </view>
 </view>
